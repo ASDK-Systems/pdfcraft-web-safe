@@ -69,6 +69,9 @@ difference worth re-checking on a future version bump, not assuming stays a no-o
 ## What this repo hosts
 
 `LICENSE-MIT` and `LICENSE-APACHE` are copied verbatim from
-`storytold/pdfcraft@v0.21.1`. The web build release asset will be uploaded to this
-repo's own release once that step runs; this file is written and pushed first,
-before any binary, per VARKIS's upload process.
+`storytold/pdfcraft@v0.21.1`. The `v0.21.1` web build release asset is live:
+uploaded via `gh release create`, then re-downloaded fresh and confirmed
+byte-for-byte identical to the pinned SHA-256 both before upload and after.
+VARKIS's own `ensureWebBuild('pdfcraft')` was run directly against this repo's
+release URL (cache cleared first) and verified it downloads, verifies and extracts
+correctly.
